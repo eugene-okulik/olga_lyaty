@@ -7,7 +7,7 @@ last_tuple = my_dict['tuple'][-1]
 print('Последний элемент ключа tuple: ', last_tuple)
 my_dict['list'].append('list_new')
 my_dict['list'].pop(1)
-my_dict['dict']['i am a tuple'] = 'value'
+my_dict['dict'][('i am a tuple',)] = 'value'
 my_dict['dict'].pop('num1')
 my_dict['set'].add('new_set')
 my_dict['set'].pop()
