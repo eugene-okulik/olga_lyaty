@@ -9,6 +9,7 @@ def fibonacci_gen():
         yield f0
         f0, f1 = f1, f0 + f1
 
+
 f = fibonacci_gen()
 count = 0
 while True:
