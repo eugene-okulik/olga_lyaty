@@ -7,7 +7,7 @@
 @finish_me
 def example(text):
     print(text)
-  
+
 example('print me')
 В результате работы будет такое:
 
