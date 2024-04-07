@@ -1,5 +1,5 @@
-'''Напишите программу: Есть функция которая делает одну из арифметических операций 
-с переданными ей числами (числа и операция передаются в аргументы функции). 
+'''Напишите программу: Есть функция которая делает одну из арифметических операций
+с переданными ей числами (числа и операция передаются в аргументы функции).
 Функция выглядит примерно так:
 
 def calc(first, second, operation):
@@ -8,7 +8,7 @@ def calc(first, second, operation):
     elif .....
 Программа спрашивает у пользователя 2 числа (вне функции)
 
-Создайте декоратор, который декорирует функцию calc и управляет тем 
+Создайте декоратор, который декорирует функцию calc и управляет тем
 какая операция будет произведена:
 
 если числа равны, то функция calc вызывается с операцией сложения этих чисел
@@ -27,7 +27,7 @@ def decorator_calc(func):
             return func(first, second, '-')
         elif first < second:
             return func(first, second, '/')
-    
+
     return wrapper
 
 
@@ -41,8 +41,8 @@ def calc(first, second, operation):
         return first / second
     elif operation == '*':
         return first * second
-        
+
 
 first = int(input('Enter first number: '))
 second = int(input('Enter second number: '))
-print(f'Result calculation: ', calc(first, second))
+print('Result calculation: ', calc(first, second))
