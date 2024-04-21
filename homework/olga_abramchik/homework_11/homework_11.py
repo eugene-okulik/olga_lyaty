@@ -9,10 +9,10 @@ class Books:
         self.ISBN = ISBN
         self.reserve = reserve
 
-
     def book_info(self):
-        if self.reserve == True:
-            print(f'Название: {self.name}, Автор: {self.author}, страниц: {self.pages}, материал: {self.page_material}, зарезервирована')
+        if self.reserve is True:
+            print(f'Название: {self.name}, Автор: {self.author}, страниц: {self.pages}, материал: {self.page_material}, '
+                  f'зарезервирована')
         else:
             print(f'Название: {self.name}, Автор: {self.author}, страниц: {self.pages}, материал: {self.page_material}')
 
@@ -26,10 +26,12 @@ class Textbooks(Books):
         self.task = task
 
     def textbook_info(self):
-        if self.reserve == True:
-            print(f'Название: {self.name}, Автор: {self.author}, страниц: {self.pages}, предмет: {self.subject}, класс: {self.group}, зарезервирована')
+        if self.reserve is True:
+            print(f'Название: {self.name}, Автор: {self.author}, страниц: {self.pages}, предмет: {self.subject}, '
+                  f'класс: {self.group}, зарезервирована')
         else:
-            print(f'Название: {self.name}, Автор: {self.author}, страниц: {self.pages}, материал: {self.subject}, класс: {self.group}')
+            print(f'Название: {self.name}, Автор: {self.author}, страниц: {self.pages}, материал: {self.subject}, '
+                  f'класс: {self.group}')
 
 
 book_1 = Books('Идиот', 'Достоевский', 500, '21202', True)
@@ -57,4 +59,3 @@ textbook_2.textbook_info()
 textbook_3.textbook_info()
 textbook_4.textbook_info()
 textbook_5.textbook_info()
-
