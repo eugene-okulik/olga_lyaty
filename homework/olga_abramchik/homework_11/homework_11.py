@@ -11,8 +11,8 @@ class Books:
 
     def book_info(self):
         if self.reserve is True:
-            print(f'Название: {self.name}, Автор: {self.author}, страниц: {self.pages}, материал: {self.page_material}, '
-                  f'зарезервирована')
+            print(f'Название: {self.name}, Автор: {self.author}, страниц: {self.pages}, ' 
+                  f'материал: {self.page_material}, зарезервирована')
         else:
             print(f'Название: {self.name}, Автор: {self.author}, страниц: {self.pages}, материал: {self.page_material}')
 
