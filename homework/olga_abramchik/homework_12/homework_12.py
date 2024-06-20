@@ -8,7 +8,7 @@ class Flowers:
         self.stem_length = stem_length     # Длина стебля в см
 
     def __repr__(self):
-        return (f'{self.name} (colour = {self.colour}, cost = {self.cost}, lifespan = {self.lifespan}, ' 
+        return (f'{self.name} (colour = {self.colour}, cost = {self.cost}, lifespan = {self.lifespan},' 
                 f'stem_length = {self.stem_length})')
 
 
