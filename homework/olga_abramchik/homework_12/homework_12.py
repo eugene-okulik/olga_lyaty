@@ -8,7 +8,8 @@ class Flowers:
         self.stem_length = stem_length     # Длина стебля в см
 
     def __repr__(self):
-        return f'{self.name} (colour = {self.colour}, cost = {self.cost}, lifespan = {self.lifespan}, stem_length = {self.stem_length})'
+        return (f'{self.name} (colour = {self.colour}, cost = {self.cost}, lifespan = {self.lifespan}, ' 
+                f'stem_length = {self.stem_length})')
 
 
 # Классы для различных видов цветов
@@ -30,7 +31,7 @@ class Lily(Flowers):
 class Bouquet:
     def __init__(self):
         self.flowers = []      # Список объектов цветов в букете
-    
+
     def add_flower(self, flower):
         self.flowers.append(flower)   # Добавление цветка в букет
 
@@ -51,6 +52,7 @@ class Bouquet:
 
     def __repr__(self):
         return f"Состав букета: ({self.flowers})"
+
 
 # Создание объектов цветов разных видов
 flouwer_1 = Rose("Pink", 5, 11, 45)
